@@ -1,7 +1,7 @@
 // URL base da API - será ajustada automaticamente em produção
 const API_BASE = window.location.hostname === 'localhost' 
     ? 'http://localhost:3000/api' 
-    : 'https://jest-dcs.vercel.app/api';
+    : 'https://testes-com-jest.onrender.com/api';
 
 // Elementos do DOM
 const mathResult = document.getElementById('mathResult');
@@ -160,4 +160,5 @@ async function checkApiStatus() {
         apiStatus.className = 'inline-block w-3 h-3 rounded-full mr-2 error-status';
         apiStatusText.textContent = 'API offline - não foi possível conectar';
     }
+
 }
