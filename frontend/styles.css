@@ -1,0 +1,29 @@
+/* Estilos personalizados para complementar o Tailwind */
+.hidden {
+    display: none;
+}
+
+#usersList .user-item {
+    transition: all 0.3s ease;
+}
+
+#usersList .user-item:hover {
+    background-color: #f9fafb;
+}
+
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.success-status {
+    background-color: #10B981;
+}
+
+.error-status {
+    background-color: #EF4444;
+}
+
+.unknown-status {
+    background-color: #6B7280;
+}

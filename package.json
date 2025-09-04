@@ -1,0 +1,37 @@
+{
+  "name": "backend-jest",
+  "version": "1.0.0",
+  "description": "Backend com testes Jest para deploy na Vercel",
+  "main": "api/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "@vercel/node": "^2.0.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.0",
+    "@babel/preset-env": "^7.22.0",
+    "babel-jest": "^29.0.0",
+    "jest": "^29.0.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coverageDirectory": "coverage"
+  },
+  "keywords": [
+    "node",
+    "jest",
+    "vercel",
+    "api"
+  ],
+  "author": "Dérick Campos",
+  "license": "MIT"
+}
